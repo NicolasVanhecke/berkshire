@@ -17,10 +17,12 @@ This project was developed with the use of [Laravel Valet](https://laravel.com/d
 
 ## Setup
 Below are the steps needed in order to setup this project
-1. Something with the .env and .env.example
-2. Set up a database in your favourite program
-3. Execute ```php artisan migrate:fresh --seed``` in order to migrate all tables and fill them with dummy data.
-4. // TODO
+1. Execute ```php artisan key:generate``` to generate a unique APP_KEY
+2. Duplicate the ```.env.example``` file and name it ```.env```
+3. Set up a database in your favourite program. The default name in ```.env``` is berkshire, if you rename it, make sure to update the ```.env```-file.
+4. Execute ```php artisan migrate:fresh --seed``` in order to migrate all tables and fill them with dummy data.
+5. See next section on how to setup mail service (MailHog)
+6. // TODO
 
 
 ## Mail
