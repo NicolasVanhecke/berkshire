@@ -1,0 +1,48 @@
+// for include in navigation
+nav{
+    background: url( '/images/dob-motief.png' );
+    @include xs{ max-height: 120px; }
+    @include sm{ max-height: 140px; }
+    @include md{ max-height: 160px; }
+    @include lg{ max-height: 180px; }
+    @include xl{ max-height: 220px; }
+    @include xxl{ max-height: 275px; }
+
+    img{
+        @include xs{ max-height: 80px; }
+        @include sm{ max-height: 100px; }
+        @include md{ max-height: 120px; }
+        @include lg{ max-height: 180px; }
+        @include xl{ max-height: 220px; }
+        @include xxl{ max-height: 100%; }
+    }
+
+    a{ padding: 0; border: none; } // reset
+
+    select{
+        background-color: transparent;
+        color: white;
+        border: 2px solid $main-color;
+        border-radius: 20px;
+    }
+
+    .locale-wrapper{
+        img{ height: 12px; }
+
+        button{
+            margin-left: 10px;
+            padding: 4px 12px;
+            border: 1px solid $main-color;
+            border-radius: 20px;
+            color: white;
+        }
+
+        ul{
+            position: absolute;
+            background-color: white;
+            padding: 3px 8px;
+            width: 65px;
+            margin-left: 10px;
+        }
+    }
+}

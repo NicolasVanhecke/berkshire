@@ -1,0 +1,14 @@
+// Card grid
+.cards-wrapper{
+    .card{
+        &:hover{ background-color: rgba( $main-color, .15); }
+        .card-image{
+            @include xs{ height: 300px; }
+            @include sm{ height: 200px; }
+            @include md{ height: 180px; }
+            @include lg{ height: 180px; }
+            @include xl{ height: 200px; }
+            @include xxl{ height: 280px; }
+        }
+    }
+}

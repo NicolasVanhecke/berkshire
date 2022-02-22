@@ -18,11 +18,9 @@ This project was developed with the use of [Laravel Valet](https://laravel.com/d
 ## Setup
 Below are the steps needed in order to setup this project
 1. Something with the .env and .env.example
-2. Set up a database in your favorite programm
+2. Set up a database in your favourite program
 3. Execute ```php artisan migrate:fresh --seed``` in order to migrate all tables and fill them with dummy data.
-4. //
-5. //
-6. //
+4. // TODO
 
 
 ## Mail

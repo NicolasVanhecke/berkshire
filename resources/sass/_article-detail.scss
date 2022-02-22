@@ -1,0 +1,21 @@
+// Detail page
+.article-wrapper{
+    .article-body{
+        p{
+            line-height: 1.75rem;
+            margin-bottom: 18px;
+        }
+
+        blockquote{
+            background-color: $accent-bg-color;
+            margin: 2rem auto 4rem auto;
+            @include xs{ padding: 1rem 4rem; }
+            @include sm{ padding: 2rem 4rem; }
+            @include md{ padding: 2rem 4rem; }
+            @include lg{ padding: 2rem 4rem; }
+            @include xl{ padding: 2rem 6rem; }
+            @include xxl{ padding: 2rem 6rem; }
+        }
+
+    }
+}

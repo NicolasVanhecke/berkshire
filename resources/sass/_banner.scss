@@ -1,0 +1,16 @@
+// banner
+.banner-wrapper{
+    background-color: $accent-bg-color;
+
+    .tag-pill{
+        /* font-family: "Museo"; */
+        background-color: white;
+        color: $main-color;
+        border: 2px solid $main-color;
+        border-radius: 20px;
+    }
+    .tag-pill-active{
+        color: white;
+        background-color: $main-color;
+    }
+}

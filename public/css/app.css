@@ -1,0 +1,413 @@
+body {
+  background-color: #FCF5E9;
+}
+
+a {
+  text-decoration: none;
+  color: #910800;
+  border-bottom: 2px solid #910800;
+  padding-bottom: 4px;
+}
+
+h1, h3, h4, h5, p, blockquote, label {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #004E35;
+}
+
+h1, h3, h4, h5 {
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1536px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+}
+@media (min-width: 1536px) {
+  h1 {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 3rem 0 1rem 0;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 3rem 0 1rem 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin: 3rem 0 1rem 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 3rem 0 2rem 0;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1536px) {
+  h3 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin: 4rem 0 2rem 0;
+  }
+}
+@media (min-width: 1536px) {
+  h3 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin: 4rem 0 2rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  h4 {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  h4 {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1536px) {
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 1536px) {
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  h5 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  h5 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  h5 {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  h5 {
+    font-size: 1.125rem;
+    line-height: 2.125rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1536px) {
+  h5 {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+}
+@media (min-width: 1536px) {
+  h5 {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+}
+
+.alert {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  border: 1px solid;
+  padding: 10px 20px;
+}
+.alert strong {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.alert p {
+  font-size: 1.75rem;
+}
+
+.alert-success {
+  background-color: white;
+  border-color: #004E35;
+  color: #004E35;
+}
+
+.alert-error {
+  background-color: white;
+  border-color: #910800;
+  color: #910800;
+}
+
+nav {
+  background: url("/images/dob-motief.png");
+}
+@media (max-width: 640px) {
+  nav {
+    max-height: 120px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  nav {
+    max-height: 140px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    max-height: 160px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  nav {
+    max-height: 180px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1536px) {
+  nav {
+    max-height: 220px;
+  }
+}
+@media (min-width: 1536px) {
+  nav {
+    max-height: 275px;
+  }
+}
+@media (max-width: 640px) {
+  nav img {
+    max-height: 80px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  nav img {
+    max-height: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav img {
+    max-height: 120px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  nav img {
+    max-height: 180px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1536px) {
+  nav img {
+    max-height: 220px;
+  }
+}
+@media (min-width: 1536px) {
+  nav img {
+    max-height: 100%;
+  }
+}
+nav a {
+  padding: 0;
+  border: none;
+}
+nav select {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #910800;
+  border-radius: 20px;
+}
+nav .locale-wrapper img {
+  height: 12px;
+}
+nav .locale-wrapper button {
+  margin-left: 10px;
+  padding: 4px 12px;
+  border: 1px solid #910800;
+  border-radius: 20px;
+  color: white;
+}
+nav .locale-wrapper ul {
+  position: absolute;
+  background-color: white;
+  padding: 3px 8px;
+  width: 65px;
+  margin-left: 10px;
+}
+
+.banner-wrapper {
+  background-color: #F6EED3;
+}
+.banner-wrapper .tag-pill {
+  /* font-family: "Museo"; */
+  background-color: white;
+  color: #910800;
+  border: 2px solid #910800;
+  border-radius: 20px;
+}
+.banner-wrapper .tag-pill-active {
+  color: white;
+  background-color: #910800;
+}
+
+.cards-wrapper .card:hover {
+  background-color: rgba(145, 8, 0, 0.15);
+}
+@media (max-width: 640px) {
+  .cards-wrapper .card .card-image {
+    height: 300px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .cards-wrapper .card .card-image {
+    height: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards-wrapper .card .card-image {
+    height: 180px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .cards-wrapper .card .card-image {
+    height: 180px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1536px) {
+  .cards-wrapper .card .card-image {
+    height: 200px;
+  }
+}
+@media (min-width: 1536px) {
+  .cards-wrapper .card .card-image {
+    height: 280px;
+  }
+}
+
+.article-wrapper .article-body p {
+  line-height: 1.75rem;
+  margin-bottom: 18px;
+}
+.article-wrapper .article-body blockquote {
+  background-color: #F6EED3;
+  margin: 2rem auto 4rem auto;
+}
+@media (max-width: 640px) {
+  .article-wrapper .article-body blockquote {
+    padding: 1rem 4rem;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .article-wrapper .article-body blockquote {
+    padding: 2rem 4rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .article-wrapper .article-body blockquote {
+    padding: 2rem 4rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .article-wrapper .article-body blockquote {
+    padding: 2rem 4rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1536px) {
+  .article-wrapper .article-body blockquote {
+    padding: 2rem 6rem;
+  }
+}
+@media (min-width: 1536px) {
+  .article-wrapper .article-body blockquote {
+    padding: 2rem 6rem;
+  }
+}
+
+.related-products-wrapper {
+  background-color: #F6EED3;
+}
+.related-products-wrapper h3 {
+  margin: 4rem 0 2rem 0;
+}
+
+.form-input .input-field {
+  border: 2px solid #910800;
+  border-radius: 20px;
+  color: #910800;
+  padding: 4px 12px;
+}
+.form-input .input-field::-moz-placeholder {
+  color: #910800;
+  opacity: 1;
+}
+.form-input .input-field:-ms-input-placeholder {
+  color: #910800;
+  opacity: 1;
+}
+.form-input .input-field::placeholder {
+  color: #910800;
+  opacity: 1;
+}
+
+.submit-btn {
+  background-color: #910800;
+  color: white;
+  border: 2px solid #910800;
+  border-radius: 20px;
+  padding: 4px 12px;
+}

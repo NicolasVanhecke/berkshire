@@ -1,0 +1,25 @@
+.alert{
+    position: fixed;
+    top: 40px; right: 40px;
+    border: 1px solid;
+    padding: 10px 20px;
+    strong{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.75rem;
+    }
+}
+
+.alert-success{
+    background-color: white;
+    border-color: $text-color;
+    color: $text-color;
+}
+
+.alert-error{
+    background-color: white;
+    border-color: $main-color;
+    color: $main-color;
+}
