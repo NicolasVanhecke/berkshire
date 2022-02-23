@@ -41,7 +41,7 @@ class ArticleController extends Controller
 
         // Fetch (4) random articles with at least one similar tag
         $related_articles = [];
-        $related_articles = Article::whereHas('tags', function( $query ) use ( $tag_ids ) {
+        $related_articles = Article::with('tags')->whereHas('tags', function( $query ) use ( $tag_ids ) {
             return $query->whereIn('tag_id', $tag_ids);
         })
             ->inRandomOrder()
@@ -77,6 +77,7 @@ class ArticleController extends Controller
         foreach( $article->translations as $translation ){
             if( $translation->locale === App::getLocale() ){
                 $translation->setAttribute('image', $article->image );
+                $translation->setAttribute('tags', $article->tags );
                 $translated_article = $translation;
             }
         }
