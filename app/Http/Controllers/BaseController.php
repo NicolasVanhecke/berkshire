@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\App;
 
 class BaseController extends Controller
 {
-
     public function newsletter(Request $request)
     {
         $locale = App::getLocale();

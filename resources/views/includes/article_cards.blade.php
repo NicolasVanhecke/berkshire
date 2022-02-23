@@ -16,7 +16,7 @@
                 <div class="card-image" style="background: no-repeat url('/images/articles/{{ $article->image }}'); background-size: cover;"></div>
                 <h4 class="mt-4 mb-2">{{ $article->title }}</h4>
                 <p class="mb-2">{{ $article->short }}</p>
-                <a href="/{{ app()->getLocale() }}/articles/{{ $article->id }}" class="text-sm font-semibold tracking-widest uppercase">{{ __( 'articles.read-more-link' ) }}</a>
+                <a href="/{{ app()->getLocale() }}/articles/{{ $article->article_id }}" class="text-sm font-semibold tracking-widest uppercase">{{ __( 'articles.read-more-link' ) }}</a>
             </div>
         @endforeach
     </div>

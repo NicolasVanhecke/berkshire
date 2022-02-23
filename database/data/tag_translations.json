@@ -1,0 +1,42 @@
+[
+    {
+        "tag_id": 1,
+        "locale": "nl",
+        "value": "Inspiratie"
+    },
+    {
+        "tag_id": 1,
+        "locale": "en",
+        "value": "Inspiration"
+    },
+    {
+        "tag_id": 2,
+        "locale": "nl",
+        "value": "Producten"
+    },
+    {
+        "tag_id": 2,
+        "locale": "en",
+        "value": "Products"
+    },
+    {
+        "tag_id": 3,
+        "locale": "nl",
+        "value": "In de kijker"
+    },
+    {
+        "tag_id": 3,
+        "locale": "en",
+        "value": "Highlighted"
+    },
+    {
+        "tag_id": 4,
+        "locale": "nl",
+        "value": "Promoties"
+    },
+    {
+        "tag_id": 4,
+        "locale": "en",
+        "value": "Promotions"
+     }
+]

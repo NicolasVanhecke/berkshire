@@ -14,11 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('articles', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
+            $table->increments('id');
             $table->string('image');
-            $table->string('short');
-            $table->text('body');
             $table->timestamps();
             $table->softDeletes();
         });

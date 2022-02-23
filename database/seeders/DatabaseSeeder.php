@@ -17,9 +17,11 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
         $this->call([
-            TagSeeder::class, // first create tags
-            ArticleSeeder::class, // second
-            ArticleTagSeeder::class, // last
+            TagSeeder::class,
+            ArticleSeeder::class,
+            ArticleTagSeeder::class,
+            TagTranslationSeeder::class,
+            ArticleTranslationSeeder::class,
         ]);
     }
 }

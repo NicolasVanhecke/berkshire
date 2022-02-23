@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Tag;
+use App\Models\ArticleTranslation;
 
 class Article extends Model
 {
@@ -16,6 +17,11 @@ class Article extends Model
         'short',
         'body'
     ];
+
+    public function translations()
+    {
+        return $this->hasMany(ArticleTranslation::class);
+    }
 
     public function tags()
     {
