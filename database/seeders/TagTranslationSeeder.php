@@ -16,6 +16,7 @@ class TagTranslationSeeder extends Seeder
      */
     public function run()
     {
+        // Fetch json file to seeding the database
         $json = File::get("database/data/tag_translations.json");
         $tag_translations = json_decode($json);
 

@@ -18,11 +18,17 @@ class Article extends Model
         'body'
     ];
 
+    /**
+     * Relation on translations
+     */
     public function translations()
     {
         return $this->hasMany(ArticleTranslation::class);
     }
 
+    /**
+     * Relation on tags
+     */
     public function tags()
     {
         return $this->belongsToMany(Tag::class);

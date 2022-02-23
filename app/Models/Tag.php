@@ -15,11 +15,17 @@ class Tag extends Model
         'name'
     ];
 
+    /**
+     * Relation on translations
+     */
     public function translations()
     {
         return $this->hasMany(TagTranslation::class);
     }
 
+    /**
+     * Relation on articles
+     */
     public function articles()
     {
         return $this->belongsToMany(Article::class);

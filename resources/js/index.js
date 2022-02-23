@@ -1,9 +1,9 @@
 $(document).ready(function(e) {
-    $( '.alert' ).delay( 4000 ).fadeOut( 1000 );
+    $( '.alert' ).delay( 4000 ).fadeOut( 1000 ); // fade out the message after newsletter form submit
    articleTagToggle();
 });
 
-// show/hide cards, based on the clicked button
+// Show/hide cards, based on the selected data-attribute ( tag )
 function articleTagToggle(){
     $( '.tag-pill' ).click( function() {
         var clickedId = $( this ).attr( 'data-tag' );
@@ -26,6 +26,7 @@ function articleTagToggle(){
     });
 }
 
+// Add/remove the 'active' class for the selected tag
 function activeClickedTagPil( clickedId ){
     $( '.tag-pill' ).each( function( i, obj ){
         $( this ).removeClass( 'tag-pill-active' );

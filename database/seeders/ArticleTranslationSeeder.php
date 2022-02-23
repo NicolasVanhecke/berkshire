@@ -28,6 +28,7 @@ class ArticleTranslationSeeder extends Seeder
         <h3>Vitae in scelerisque pulvinar quis sit. Placerat pulvinar nulla et sed gravida nascetur tempor, feugiat vitae.</h3>
         <p>Egestas pellentesque ultrices maecenas eros lorem at sed. Pulvinar laoreet magna ipsum, massa. <b>Nec in venenatis</b>, nibh auctor mauris, auctor velit. Gravida donec magna nisl leo pulvinar ut egestas. Eu dui, aliquam facilisis non porta risus ipsum non quam. A duis sed nec imperdiet. Convallis viverra sit suspendisse tristique eget scelerisque a tristique. Commodo vitae massa risus ultricies commodo magnis id augue erat. Sit adipiscing sagittis odio purus quisque. Nulla mi egestas urna sit ac dui facilisis at. Habitant consectetur at duis pretium id <b>suspendisse nulla</b> arcu. Gravida adipiscing vitae urna eu, sem massa.</p>';
 
+        // Fetch json file to seeding the database
         $json = File::get("database/data/article_translations.json");
         $article_translations = json_decode($json);
 

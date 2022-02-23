@@ -16,6 +16,7 @@ class ArticleTagSeeder extends Seeder
      */
     public function run()
     {
+        // Fetch json file to seeding the database
         $json = File::get("database/data/article_tag.json");
         $article_tags = json_decode($json);
 

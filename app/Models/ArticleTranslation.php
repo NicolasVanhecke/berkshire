@@ -18,6 +18,9 @@ class ArticleTranslation extends Model
         'body'
     ];
 
+    /**
+     * Relation on articles
+     */
     public function article()
     {
         return $this->belongsTo(Article::class);

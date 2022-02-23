@@ -16,6 +16,9 @@ class TagTranslation extends Model
         'value'
     ];
 
+    /**
+     * Relation on tags
+     */
     public function tag()
     {
         return $this->belongsTo(Tag::class);

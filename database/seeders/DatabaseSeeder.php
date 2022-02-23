@@ -14,8 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-
+        // Run seeder classes to fill the database with data
         $this->call([
             TagSeeder::class,
             ArticleSeeder::class,
