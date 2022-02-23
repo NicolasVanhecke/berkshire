@@ -28,7 +28,7 @@ class ArticleController extends Controller
         $translated_article = $this->fetchArticlesWithTranslation( $id );
 
         // Gather all id's from main article tags in array
-        $tag_ids = $article->tags->pluck('id')->toArray();
+        $tag_ids = $translated_article->tags->pluck('id')->toArray();
 
         // Fetch (4) random articles with at least one similar tag
         $related_articles = [];
